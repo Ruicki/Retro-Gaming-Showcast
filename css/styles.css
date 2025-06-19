@@ -102,3 +102,27 @@ body {
   }
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  .juegos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .card_juego {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .menu_horizontal {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .titulo_principal {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+
