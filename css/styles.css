@@ -77,3 +77,28 @@ body {
   align-items: center;
   padding: 40px 0;
 }
+
+@media (max-width: 768px) {
+  .juegos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_juego {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .menu_horizontal {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .titulo_principal {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
