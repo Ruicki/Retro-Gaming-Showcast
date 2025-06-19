@@ -74,9 +74,20 @@ body {
   transition: transform 0.3s ease;
 }
 
-.card_juego:hover {
-  transform: scale(1.03);
+.card_juego {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease; /* ✅ animación suave */
 }
+
+.card_juego:hover {
+  transform: scale(1.03); /* ✅ efecto de agrandado */
+}
+
 
 .card_juego img {
   width: 100%;
