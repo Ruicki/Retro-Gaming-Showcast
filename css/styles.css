@@ -1,52 +1,129 @@
-/* ---------- ESTILOS GENERALES ---------- */
+/* 🎨 Estilos Generales */
 body {
   background-color: black;
   margin: 0;
   padding: 0;
   font-family: 'Courier New', monospace;
+  color: white;
 }
 
-/* ---------- TITULO ---------- */
-.titulo_principal {
+body.modo-claro {
+  background-color: white;
+  color: black;
+}
+
+/* 🧾 Títulos */
+h1, h2, h3 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+#titulo_principal {
   background-color: white;
   color: black;
   font-size: 3rem;
   padding: 20px 40px;
   border-radius: 50px;
-  text-align: center;
+}
+.centrado_titulo{
+  background-color: rgb(0, 0, 0);
+  padding: 20px 40px;
+  border: solid white;
+  border-radius: 50px;
+  color: #ffffff;
 }
 
-/* ---------- MENÚ ---------- */
-.menu_horizontal {
+body.modo-claro #titulo_principal {
+  background-color: black;
+  color: white;
+}
+body.modo-claro .centrado_titulo{
+  background-color: rgb(255, 255, 255);
+  padding: 20px 40px;
+  border: solid #111;
+  border-radius: 50px;
+  color: #000000;
+}
+
+/* 🌓 Botón Tema */
+#btn-tema {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
   background-color: white;
+  color: black;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+body.modo-claro #btn-tema {
+  background-color: black;
+  color: white;
+}
+
+/* 🧭 Menú */
+.menu_horizontal {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
+
+background-color: rgba(255, 255, 255, 0.3); /* blanco 30% visible */
+
 }
+
+.fondo {
+  background-image: url('../img/bg-pixel-menu.jpg');
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3); /* transparencia ligera */
+  backdrop-filter: blur(5px);  /* difumina el fondo detrás */
+  -webkit-backdrop-filter: blur(5px); /* para Safari */
+}
+
+
 
 .menu_horizontal a {
   text-decoration: underline;
-  color: black;
-  padding: 10px 15px;
+  color: rgb(255, 255, 255);
+  padding: 10px 10px;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   transition: all 0.3s;
 }
 
 .menu_horizontal a:hover {
-  background-color: #ddd;
-  color: rgb(0, 255, 42);
+  background-color: #e9e9e9;
+  color: rgb(26, 31, 39);
 }
 
-/* ---------- CONTENEDOR DEL TÍTULO ---------- */
+body.modo-claro .menu_horizontal {
+  background-color: #111;
+}
+
+body.modo-claro .menu_horizontal a {
+  color: white;
+}
+body.modo-claro .menu_horizontal a:hover{
+ background-color: rgba(196, 193, 193, 0.2)
+}
+
+
+/* 📦 Contenedores Generales */
 .centrado {
   display: flex;
   justify-content: center;
@@ -54,85 +131,69 @@ body {
   padding: 40px 0;
 }
 
-/* ---------- TARJETAS DE JUEGOS ---------- */
-.juegos {
+.centrar {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 5rem;
   justify-items: center;
   padding: 2rem;
+  text-align: center;
 }
 
-.card_juego {
+/* 🃏 Tarjetas */
+.card_juego,
+.card_consola,
+.curiosidad_card,
+.comparacion div {
   background-color: white;
+  color: black;
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
   max-width: 250px;
   width: 100%;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
   transition: transform 0.3s ease;
 }
 
-.card_juego:hover {
+.card_juego:hover,
+.card_consola:hover,
+.curiosidad_card:hover,
+.comparacion div:hover {
   transform: scale(1.15);
 }
 
-.card_juego img {
+.card_juego img,
+.card_consola img {
   width: 100%;
   height: 180px;
   object-fit: contain;
   border-radius: 10px;
 }
 
-.card_juego h3,
-.card_juego p {
-  text-align: center;
+.comparacion div {
+  max-width: 300px;
 }
 
-/* ---------- CONSOLAS ---------- */
-.consolas {
-  color: white;
-  padding: 2rem;
-  text-align: center;
+body.modo-claro .card_juego,
+body.modo-claro .card_consola,
+body.modo-claro .curiosidad_card,
+body.modo-claro .comparacion div {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* 🧩 Grillas */
 .grid_consolas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  justify-items: center;
   padding-top: 1rem;
 }
 
-.card_consola {
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 250px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.card_consola:hover {
-  transform: scale(1.20);
-}
-
-.card_consola img {
-  width: 100%;
-  height: 160px;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-/* ---------- CURIOSIDADES RETRO (NUEVO BLOQUE) ---------- */
-.curiosidades {
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-.curiosidades_grid {
+.curiosidades_grid,
+.comparacion {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -140,94 +201,23 @@ body {
   padding: 2rem;
 }
 
-.curiosidad_card {
-  background-color: white;
-  color: black;
-  padding: 1.2rem;
-  border-radius: 10px;
-  max-width: 300px;
-  flex: 1 1 250px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  transition: transform 0.3s ease;
-  text-align: center;
-}
-
-.curiosidad_card:hover {
-  transform: scale(1.05);
-}
-
-/* ---------- COMPARATIVA RETRO VS ACTUAL ---------- */
-.comparativa {
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-
-.comparacion {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 2rem;
-}
-
-.comparacion div {
-  background-color: white;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.2);
-  transition: transform 0.3s ease;
-}
-
-.comparacion div:hover {
-  transform: scale(1.05);
-}
-
-/* ---------- OLVIDADAS ---------- */
-.olvidadas {
-  color: white;
-  padding: 2rem;
-}
-
-.olvidadas h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-/* ---------- RESPONSIVE - TABLET (≤ 1024px) ---------- */
-@media (max-width: 1024px) {
-  .titulo_principal {
-    font-size: 2rem;
-  }
-
-  .menu_horizontal a {
-    font-size: 1.3rem;
-  }
-}
-
-/* ---------- RESPONSIVE - MÓVILES (≤ 768px) ---------- */
+/* 📱 Responsivo */
 @media (max-width: 768px) {
-  .titulo_principal {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-
   .menu_horizontal {
-    gap: 15px;
-    padding: 10px;
+    gap: 10px;
   }
 
   .menu_horizontal a {
     font-size: 1.2rem;
   }
 
-  .card_juego {
+  .card_juego,
+  .card_consola {
     max-width: 90%;
   }
 
-  .curiosidades_grid {
+  .curiosidades_grid,
+  .comparacion {
     flex-direction: column;
     align-items: center;
   }

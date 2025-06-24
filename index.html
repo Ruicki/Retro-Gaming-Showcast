@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,147 +10,131 @@
 </head>
 <body>
 
-  <!-- Encabezado principal -->
+  <!-- Botón para cambiar tema -->
+  <button id="btn-tema">🌞 Cambiar tema</button>
+
+  <!-- Encabezado -->
   <section class="centrado">
-    <h1 class="titulo_principal">🎮 Bienvenido a RetroGaming Showcase</h1>
+    <h1 id="titulo_principal">🎮 Bienvenido a RetroGaming Showcase</h1>
   </section>
 
   <!-- Menú de navegación -->
-  <nav class="menu_horizontal">
+  <nav class="menu_horizontal fondo">
     <a href="#top10">Top 10</a>
     <a href="#populares">Más Populares</a>
+    <a href="#curiosidades">Curiosidades</a>
+    <a href="#comparativa">Retro vs Actualidad</a>
     <a href="#consolas">Consolas</a>
+    <a href="#olvidadas">Olvidadas</a>
     <a href="#ventas">Más Vendidos</a>
   </nav>
 
   <!-- Top 10 Juegos -->
-  <section id="top10" class="juegos">
-    <div class="card_juego">
-      <img src="img/the-legend-of-zelda-ocarina-of-time.jpg" alt="The Legend of Zelda: Ocarina of Time">
-      <h3>The Legend of Zelda: Ocarina of Time.</h3>
-      <p>Nintendo 64 | 1998 | ⭐ 9.9</p>
+  <section id="top10">
+    <div class="centrado">
+      <h2 class="centrado_titulo">🏆 Top 10</h2>
     </div>
-    <div class="card_juego">
-      <img src="img/tony-hawks-pro-skater-2.jpg" alt="Tony Hawk's Pro Skater 2">
-      <h3>Tony Hawk's Pro Skater 2.</h3>
-      <p>PlayStation | 2000 | ⭐ 9.8</p>
-    </div>
-    <div class="card_juego">
-      <img src="img/grand-theft-auto-iv.jpg" alt="Grand Theft Auto IV">
-      <h3>Grand Theft Auto IV.</h3>
-      <p>Multiplataforma | 2008 | ⭐ 9.8</p>
-    </div>
-    <div class="card_juego">
-      <img src="img/soulcalibur.jpg" alt="SoulCalibur">
-      <h3>SoulCalibur.</h3>
-      <p>Dreamcast | 1999 | ⭐ 9.8</p>
-    </div>
-    <div class="card_juego">
-      <img src="img/super-mario-galaxy.jpg" alt="Super Mario Galaxy">
-      <h3>Super Mario Galaxy.</h3>
-      <p>Nintendo Wii | 2007 | ⭐ 9.7</p>
-    </div>
-    <div class="card_juego">
-      <img src="img/super-mario-galaxy-2.png" alt="Super Mario Galaxy 2">
-      <h3>Super Mario Galaxy 2.</h3>
-      <p>Nintendo Wii | 2010 | ⭐ 9.7</p>
-    </div>
-    <div class="card_juego">
-      <img src="img/red-dead-redemption-2.jpg" alt="Red Dead Redemption 2">
-      <h3>Red Dead Redemption 2.</h3>
-      <p>Multiplataforma | 2018 | ⭐ 9.7</p>
-    </div>
-    <div class="card_juego">
-      <img src="img/the-legend-of-zelda-breath-of-the-wild.jpg" alt="Zelda: Breath of the Wild">
-      <h3>Zelda: Breath of the Wild.</h3>
-      <p>Switch | 2017 | ⭐ 9.7</p>
-    </div>
-    <div class="card_juego">
-      <img src="img/the-witcher-3.jpg" alt="The Witcher 3">
-      <h3>The Witcher 3 Wild Hunt.</h3>
-      <p>Multiplataforma | 2015 | ⭐ 9.6</p>
-    </div>
-    <div class="card_juego">
-      <img src="img/elden-ring.jpg" alt="Elden Ring">
-      <h3>Elden Ring.</h3>
-      <p>Multiplataforma | 2022 | ⭐ 9.6</p>
+    <div class="centrar">
+      <div class="card_juego"><img src="img/the-legend-of-zelda-ocarina-of-time.jpg" alt=""><h3>The Legend of Zelda: Ocarina of Time.</h3><p>Nintendo 64 | 1998 | ⭐ 9.9</p></div>
+      <div class="card_juego"><img src="img/tony-hawks-pro-skater-2.jpg" alt=""><h3>Tony Hawk's Pro Skater 2.</h3><p>PlayStation | 2000 | ⭐ 9.8</p></div>
+      <div class="card_juego"><img src="img/grand-theft-auto-iv.jpg" alt=""><h3>Grand Theft Auto IV.</h3><p>Multiplataforma | 2008 | ⭐ 9.8</p></div>
+      <div class="card_juego"><img src="img/soulcalibur.jpg" alt=""><h3>SoulCalibur.</h3><p>Dreamcast | 1999 | ⭐ 9.8</p></div>
+      <div class="card_juego"><img src="img/super-mario-galaxy.jpg" alt=""><h3>Super Mario Galaxy.</h3><p>Nintendo Wii | 2007 | ⭐ 9.7</p></div>
+      <div class="card_juego"><img src="img/super-mario-galaxy-2.png" alt=""><h3>Super Mario Galaxy 2.</h3><p>Nintendo Wii | 2010 | ⭐ 9.7</p></div>
+      <div class="card_juego"><img src="img/red-dead-redemption-2.jpg" alt=""><h3>Red Dead Redemption 2.</h3><p>Multiplataforma | 2018 | ⭐ 9.7</p></div>
+      <div class="card_juego"><img src="img/the-legend-of-zelda-breath-of-the-wild.jpg" alt=""><h3>Zelda: Breath of the Wild.</h3><p>Switch | 2017 | ⭐ 9.7</p></div>
+      <div class="card_juego"><img src="img/the-witcher-3.jpg" alt=""><h3>The Witcher 3 Wild Hunt.</h3><p>Multiplataforma | 2015 | ⭐ 9.6</p></div>
+      <div class="card_juego"><img src="img/elden-ring.jpg" alt=""><h3>Elden Ring.</h3><p>Multiplataforma | 2022 | ⭐ 9.6</p></div>
     </div>
   </section>
 
-  <!-- Curiosidades Retro -->
-  <section class="curiosidades">
-    <h2>📀 Curiosidades Retro</h2>
-    <div class="curiosidades_grid">
-      <div class="curiosidad_card">
+  <!-- Más Populares -->
+  <section id="populares">
+    <div class="centrado">
+      <h2 class="centrado_titulo">🔥 Más Populares</h2>
+    </div>
+    <div class="centrar">
+      <div class="card_juego"><img src="img/fortnite.jpg" alt=""><h3>Fortnite</h3><p>Multiplataforma | 2017 | ⭐ 8.5</p></div>
+      <div class="card_juego"><img src="img/league-of-legends.jpg" alt=""><h3>League of Legends</h3><p>PC | 2009 | ⭐ 8.9</p></div>
+      <div class="card_juego"><img src="img/among-us.jpg" alt=""><h3>Among Us</h3><p>Multiplataforma | 2018 | ⭐ 8.0</p></div>
+    </div>
+  </section>
+
+  <!-- Curiosidades -->
+  <section id="curiosidades" class="curiosidades">
+    <div class="centrado">
+      <h2 class="centrado_titulo">📀 Curiosidades Retro</h2>
+    </div>
+    <div class="centrar">
+      <div class="card_juego">
         <p>El cartucho de <strong>Super Mario Bros.</strong> vendió más de 40 millones de copias gracias a que venía incluido con la NES.</p>
       </div>
-      <div class="curiosidad_card">
+      <div class="card_juego">
         <p><strong>Sonic the Hedgehog</strong> fue creado para competir directamente contra Mario.</p>
       </div>
-      <div class="curiosidad_card">
+      <div class="card_juego">
         <p>El juego <strong>E.T. de Atari</strong> fue tan mal recibido que enterraron miles de copias en el desierto.</p>
       </div>
     </div>
   </section>
 
-  <!-- Retro vs. Actualidad -->
-  <section class="comparativa">
-    <h2>🕹️ Retro vs. Actualidad</h2>
+  <!-- Comparativa Retro vs Actualidad -->
+  <section id="comparativa" class="comparativa">
+    <div class="centrado">
+      <h2 class="centrado_titulo">🕹️ Retro vs. Actualidad</h2>
+    </div>
     <div class="comparacion">
-      <div>
-        <h3>🎮 Antes</h3>
-        <p>Cartuchos, 8 bits, gráficas pixeladas, dificultad elevada y sin guardado.</p>
-      </div>
-      <div>
-        <h3>🚀 Ahora</h3>
-        <p>Gráficos realistas, mundos abiertos, modos online y actualizaciones constantes.</p>
-      </div>
+      <div><h3>🎮 Antes</h3><p>Cartuchos, 8 bits, gráficas pixeladas, dificultad elevada y sin guardado.</p></div>
+      <div><h3>🚀 Ahora</h3><p>Gráficos realistas, mundos abiertos, modos online y actualizaciones constantes.</p></div>
     </div>
   </section>
 
   <!-- Consolas Icónicas -->
   <section id="consolas" class="consolas">
-    <h2>🎮 Consolas Icónicas</h2>
+    <div class="centrado">
+      <h2 class="centrado_titulo">🎮 Consolas Icónicas</h2>
+    </div>
     <div class="grid_consolas">
-      <div class="card_consola">
-        <img src="img/nes.jpg" alt="NES">
-        <h3>Nintendo Entertainment System (NES)</h3>
-        <p>Lanzada en 1983, revolucionó el mercado tras la crisis del 83.</p>
-      </div>
-      <div class="card_consola">
-        <img src="img/psx.jpg" alt="PS1">
-        <h3>PlayStation 1</h3>
-        <p>El inicio del legado de Sony, con gráficos 3D y CD-ROMs.</p>
-      </div>
-      <div class="card_consola">
-        <img src="img/n64.jpg" alt="Nintendo 64">
-        <h3>Nintendo 64</h3>
-        <p>Introdujo el stick analógico y juegos 3D de mundo abierto.</p>
-      </div>
+      <div class="card_consola"><img src="img/nes.jpg" alt=""><h3>Nintendo Entertainment System (NES)</h3><p>Lanzada en 1983, revolucionó el mercado tras la crisis del 83.</p></div>
+      <div class="card_consola"><img src="img/psx.jpg" alt=""><h3>PlayStation 1</h3><p>El inicio del legado de Sony, con gráficos 3D y CD-ROMs.</p></div>
+      <div class="card_consola"><img src="img/n64.jpg" alt=""><h3>Nintendo 64</h3><p>Introdujo el stick analógico y juegos 3D de mundo abierto.</p></div>
     </div>
   </section>
 
   <!-- Consolas olvidadas -->
-  <section class="olvidadas">
-    <h2>🗂️ Consolas olvidadas</h2>
+  <section id="olvidadas" class="consolas">
+    <div class="centrado">
+      <h2 class="centrado_titulo">📂 Consolas Olvidadas</h2>
+    </div>
     <div class="grid_consolas">
-      <div class="card_consola">
-        <img src="img/Sega Saturn.jpg" alt="Sega Saturn">
-        <h3>Sega Saturn</h3>
-        <p>Gran catálogo pero eclipsada por la PlayStation.</p>
-      </div>
-      <div class="card_consola">
-        <img src="img/Neo Geo.jpg" alt="Neo Geo">
-        <h3>Neo Geo</h3>
-        <p>Potente pero carísima para la época.</p>
-      </div>
-      <div class="card_consola">
-        <img src="img/Dreamcast.jpg" alt="Dreamcast">
-        <h3>Dreamcast</h3>
-        <p>Innovadora, pero fracasó comercialmente.</p>
-      </div>
+      <div class="card_consola"><img src="img/sega-saturn.jpg" alt=""><h3>Sega Saturn</h3><p>Gran catálogo pero eclipsada por la PlayStation.</p></div>
+      <div class="card_consola"><img src="img/neo-geo.jpg" alt=""><h3>Neo Geo</h3><p>Potente pero carísima para la época.</p></div>
+      <div class="card_consola"><img src="img/dreamcast.jpg" alt=""><h3>Dreamcast</h3><p>Innovadora, pero fracasó comercialmente.</p></div>
     </div>
   </section>
+
+  <!-- Más vendidos -->
+  <section id="ventas">
+    <div class="centrado">
+      <h2 class="centrado_titulo">🥇 Más Vendidos</h2>
+    </div>
+    <div class="centrar">
+      <div class="card_juego"><img src="img/minecraft.jpg" alt=""><h3>Minecraft</h3><p>Multiplataforma | 2011 | ⭐ 9.3 | +200M copias</p></div>
+      <div class="card_juego"><img src="img/gta-v.jpg" alt=""><h3>Grand Theft Auto V</h3><p>Multiplataforma | 2013 | ⭐ 9.7 | +180M copias</p></div>
+      <div class="card_juego"><img src="img/tetris.png" alt=""><h3>Tetris</h3><p>Multiplataforma | 1984 | ⭐ 9.0 | +100M copias</p></div>
+    </div>
+  </section>
+
+  <!-- Script para cambiar tema -->
+  <script>
+    const botonTema = document.getElementById("btn-tema");
+    botonTema.addEventListener("click", () => {
+      document.body.classList.toggle("modo-claro");
+      botonTema.textContent = document.body.classList.contains("modo-claro")
+        ? "🌙 Cambiar tema"
+        : "🌞 Cambiar tema";
+    });
+  </script>
 
 </body>
 </html>
